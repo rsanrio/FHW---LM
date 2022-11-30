@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "../styles/estilo.css">
+<title>Software Portable</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("article").hide()
+  $("#Google").click(function(){
+    $("article").hide()
+    $("#Google").hide();
+  });
+  $("#comparativa").click(function(){
+    $("article").hide()
+    $("#comparativa").hide();
+  });
+});
+</script>
+</head>
+<body bgcolor="EBDECF">
+
+<header>
+  <h2>Software Portable</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li id="Google"><a href="../pages/Portable/Google.html"><strong>Google Chrome</strong></a></li>
+      <li id="comparativa"><a href="../pages/Portable/Comparativa4.html"><strong>Comparativa</strong></a></li>
+    </ul>
+  </nav>
+  <article id="Google">
+    <iframe  style="width:100%; border:none"src="../pages/Google.html"></iframe>
+  </article>
+  <article id="comparativa">
+    <iframe   style="width:100%; border:none"src="../pages/Comparativa4.html"></iframe>
+  </article>
+</section>
+</body>
+<input type="button" onclick="history.back()" name="Volver Atrás" value="Volver Atrás">
+</html>

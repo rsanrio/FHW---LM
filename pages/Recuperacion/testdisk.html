@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "../../styles/estilo.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+   }
+   .grid-container > div {
+      text-align: center;
+   }
+   .item1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .item2 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+   }
+.item3{
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .grid-container { background-color: rgba(169, 149, 123, 0.80);}
+
+   .item3 {background-color: rgba(169, 149, 123, 0.80);}
+
+   .titulo { background-color:rgba(169, 149, 123, 0.80);}
+
+body::-webkit-scrollbar {
+  width: 10px;               
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(169, 149, 123, 0.80);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    
+  border-radius: 20px;       
+  border: 2px solid rgba(169, 149, 123, 1.0);
+}
+ .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+</style>
+</head>
+<body>
+   <div align="center" class="titulo">
+   <h1><font color="white">TestDisk</h1>
+</div>
+   <div class="grid-container">
+      <div class="item1"><img align="left" src="../../images/TestDisk.png" width="100" height="85" ></img></div>
+   <div class="item2"><p align="center"><font color="black">TestDisk es una utilidad para la recuperación de datos licenciada como software libre. Fue desarrollado principalmente para ayudar a recuperar datos perdidos en particiones y para reparar discos de arranque, problemas causados por software defectuoso, algunos tipos de virus o errores humanos. Es fácil de instalar en cualquiera de nuestros sistemas operativos linux por lo que no nos llevará ni mucho tiempo ni esfuerzo.</p>
+   </div>
+ </div>
+
+ <div class="item3"><h1 align="left"><font color="white"></font></h1>
+
+ <p align="center">Ejecutaremos dos sencillos comandos, pero para ello tendremos que abrir la terminal. El primero de ellos será un <mark>sudo apt-get update</mark> que se encargará de actualizar la lista de paquetes disponibles y sus versiones respectivamente. Estos paquetes se cogen de una lista que tienen los servidores, por lo que no tendremos que descargar nada para instalar TestDisk en nuestra máquina.</p>
+
+   <img src="../../images/Ubuntugif.gif" class="center" height="100px"></img>   
+
+   <p align="center">Una vez realizado el comando anterior, ejecutaremos el segundo comando que nos instalará TestDisk. Escribiremos <mark>sudo apt-get install testdisk</mark> y una vez que haya terminado tendremos un programa para la recuperación de datos en nuestra máquina. Para iniciarlo solo tenemos que escribir <mark>Testdisk</mark> en nuestra terminal para que inicie</p>
+ </div>
+
+ <input type="button" onclick="history.back()" name="Volver Atrás" value="Volver Atrás">
+</body>
+</html>

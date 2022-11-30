@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+   }
+   .grid-container > div {
+      text-align: center;
+   }
+   .item1 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+}
+   .item3 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+}
+   .item3 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+}
+
+</style>
+<body background="white">
+	
+<div class="grid-container">
+	  <div class="item3"><img align="center" src="../images/blanco2.jpg"></div>
+	  <div class="item2"><img align="center" src="../images/blanco3.jpg"></div>
+      <div class="item1"><img align="center" src="../images/qr.image"></div>
+</div>
+
+<input type="button" onclick="history.back()" name="Volver Atrás" value="Volver Atrás">
+</body>

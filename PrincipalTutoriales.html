@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "styles/estilo.css">
+<title>Tutoriales 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("article").hide()
+  $("#softwareofimatico").click(function(){
+    $("article").hide()
+    $("#ofimatico").hide();
+  });
+  $("#recuperaciondatos").click(function(){
+    $("article").hide()
+    $("#recuperacion").hide();
+  });
+  $("#softwareutilidad").click(function(){
+    $("article").hide()
+    $("#utilidad").hide();
+  });
+  $("#softwareportable").click(function(){
+    $("article").hide()
+    $("#portable").hide();
+  });
+});
+</script>
+</head>
+<body bgcolor="EBDECF">
+
+<header>
+  <h2>Tutoriales</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li id="softwareofimatico"><a href="pages/SoftwareOfimatico.html"><strong>Software ofimático</strong></a></li>
+      <li id="recuperaciondatos"><a href="pages/RecuperacionDeDatos.html"><strong>Software de recuperación de datos</strong></a></li>
+      <li id="softwareutilidad"><a href="pages/SoftwareUtilidad.html"><strong>Software de utilidad</strong></a></li>
+      <li id="softwareportable"><a href="pages/SoftwarePortable.html"><strong>Software portable</strong></a></li>
+    </ul>
+  </nav>
+  <article id="ofimatico">
+    <iframe  style="width:100%; border:none"src="pages/SoftwareOfimatico.html"></iframe>
+  </article>
+  <article id="recuperacion">
+    <iframe   style="width:100%; border:none"src="pages/RecuperacionDeDatos.html"></iframe>
+  </article>
+  <article id="utilidad">
+    <iframe style="width:100%; border:none"src="pages/SoftwareUtilidad.html"></iframe>
+  </article>
+  <article id="portable">
+    <iframe style="width:100%; border:none"src="pages/SoftwarePortable.html"></iframe>
+  </article>
+</section>
+
+<footer>
+  <a href="codigoqr/qr.html"><p><H5>Windows & Linux - Rafael Sánchez Ríos</p></H5>
+</footer>
+
+</body>
+</html>

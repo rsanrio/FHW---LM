@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "../../styles/estilo.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+   }
+   .grid-container > div {
+      text-align: center;
+   }
+   .item1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .item2 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+   }
+.item3{
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .grid-container { background-color: rgba(169, 149, 123, 0.80);}
+
+   .item3 {background-color: rgba(169, 149, 123, 0.80);}
+
+   .titulo { background-color:rgba(169, 149, 123, 0.80);}
+
+body::-webkit-scrollbar {
+  width: 10px;               
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(169, 149, 123, 0.80);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    
+  border-radius: 20px;       
+  border: 2px solid rgba(169, 149, 123, 1.0);
+}
+ .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+</style>
+</head>
+<body>
+   <div align="center" class="titulo">
+   <h1><font color="white">Antivirus Avast</h1>
+</div>
+   <div class="grid-container">
+      <div class="item1"><img align="left" src="../../images/avast3.png" width="140" height="90"></img></div>
+      
+   <div class="item2"><p align="center"><font color="black">Avast es un programa antiivrus que fue desarrollado por la empresa Avast Software. Es considerado uno de los antivirus más completos caoaz de detectar más del 90% del alware que podemos encontrar en la web. Lo bueno de Avast es que es completamente gratuito, aunque también tiene versiones de pago. Avast se encuentra disponible tanto en Windows como en dispositivos móviles y macOS.</p></div>
+ </div>
+
+ <div class="item3"><p align="center">Antes de comenzar con la instalación de nuestro antivirus, lo primero que necesitamos es descargar el archivo que queremos instalar, para ello, clickando en <a href="https://www.avast.com/es-es/lp-ppc-nbu-fav-v4?ppc_code=012&ppc=e&gclid=EAIaIQobChMIjZvx3P3I-gIVSZ7tCh2T7w8tEAAYASAAEgJmgvD_BwE&gclsrc=aw.ds#pc">Avast Antivirus</a> iremos directamente a la página web de descarga.</p>
+
+<p align="center">Una vez hayamos descargado el archivo que nos teníamos que descargar, podremos proceder con la instalación. Para ello, buscaremos el ejecutable que hemos descargado y lo ejecutaremos como administradores. Hay que tener en cuenta que es importante no tener ningún otro antivirus descargado anteriormente porque podría generar incompatibilidades con esta nueva instalación. Una vez hayamos ejecutado el ejecutable de Avast se nos debería de abrir una ventana que nos dirá que instalemos Avast o que personalicemos las opciones que queremos que instale. En nuestro caso no personalizaremos la instalación y simplemente clickaremos en instalar para continuar.</p>
+<img src="../../images/Avast1.png" height="350px" class="center"></img>
+
+<p align="center">Al haber hecho click en instalar, el programa comenzará a instalarse, nos aparecerá una nueva ventana que nos estará informando en tiempo real como va la instalación de nuestro antivirus por medio de una barra de progreso. En este paso solo nos queda esperar a que el proceso de instalación termine.</p>
+<img src="../../images/Avast2.png" height="280px" class="center"></img>
+<img src="../../images/Avast4.png" height="280px" width="480px" class="center"></img>
+<p align="center">Una vez el proceso de instalación haya terminado, o en este caso, que la barra de progreso haya llegado al máximo y esté completamente terminada tan solo nos quedaría reiniciar nuestra máquina para así dejar que los servicios de Avast se instalen correctamente y el antivirus esté completamente instalado en nuestro ordenador.</p>
+
+ </div>
+ <input type="button" onclick="history.back()" name="Volver Atrás" value="Volver Atrás">
+</body>
+</html>

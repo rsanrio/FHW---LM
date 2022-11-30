@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href= "../../../styles/estilo.css">   
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+   }
+   .grid-container > div {
+      text-align: center;
+   }
+   .item1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .item2 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+   }
+.item3{
+      grid-column-start: 1;
+      grid-column-end: 2;
+   }
+   .grid-container { background-color: rgba(169, 149, 123, 0.80);}
+
+   .item3 {background-color: rgba(169, 149, 123, 0.80);}
+
+   .titulo { background-color:rgba(169, 149, 123, 0.80);}
+
+body::-webkit-scrollbar {
+  width: 10px;               
+}
+body::-webkit-scrollbar-track {
+  background-color: rgba(169, 149, 123, 0.80);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;    
+  border-radius: 20px;       
+  border: 2px solid rgba(169, 149, 123, 1.0);
+}
+ .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  }
+</style>
+</head>
+<body>
+   <div align="center" class="titulo">
+   <h1><font color="white">Softmaker FreeOffice</h1>
+</div>
+   <div class="grid-container">
+    <div class="item1"><img align="left" src="../../../images/Softmaker.png"></img></div>
+
+   <div class="item2"><p align="left"><font color="black">FreeOffice es una suite ofimática bastante completa que consta de softwares de procesamiento de textos, hojas de cálculo y presentaciones. Free Office es totalmente compatible con Microsoft Office y lo tenemos disponible tanto como para Windows y Linux. También está para Mac pero en este caso no veremos la instalación para dicho sistema operativo. Lo mejor de Free Office es que lo tenemos completamente gratuito y podemos usarlo en un ámbito profesional y personal sin tener repercusiones algunas.</p>
+
+<p align="center">Para proceder con la instalación del programa en nuestro sistema operativo Windows o Ubuntu lo primero que necesitamos es nuestro programa de <a href="https://www.freeoffice.com/es/descargar" target="_blank">FreeOffice</a> que vamos a instalar, para ello, entraremos en la página web haciendo click sobre FreeOffice que te va a dirigir a la página web de descarga del programa de instalación rápidamente.</p></div>
+ </div>
+
+ <div class="item3"><h1 align="center">Ubuntu</h1>
+
+   <p align="center">Una vez hayamos descargado el programa que vamos a instalar (versión linux en este caso) abriremos una terminal para proceder con la instalación de este.</p>
+
+   <p align="center">Una vez se nos haya abierto la terminal, tendremos que ejecutar unos comandos, pero antes debemos asegurarnos en qué carpeta se encuentra el programa que acabamos de descargar. Usualmente se encuentra en Descargas, así que en este caso procederemos empezando desde dicha carpeta.</p>
+
+   <p align="center">Para dirigirnos a la carpeta descargas en nuestra terminal linux tendremos que ejecutar un simple y sencillo comando, <mark>cd /Descargas</mark> hará que nos ponga en ese directorio inmediatamente, una vez estemos allí, ejecutaremos el comando <mark>ls</mark> para ver todos los archivos y así poder copiar el nombre del archivo que acabamos de descargar el cual nos servirá para el siguiente comando.</p>
+   <img src="../../../images/Ubuntu1.png" class="center"></img>
+
+   <p align="center">Como se puede observar en la foto de arriba, tenemos un archivo que se llama softmaker-freeoffice..., lo que haremos será copiar el nombre completo del archivo con el ratón haciendo click derecho y copiar. Una vez tengamos copiado el nombre del archivo procederemos con el siguiente comando <mark>sudo dpkg -i softmaker-freeoffice-2021_1054-01_amd64.deb</mark> el cual procederá con la instalación del programa automáticamente. </p>
+   <img src="../../../images/Ubuntu2.png" class="center"></img>
+
+   <p align="center">Una vez hayamos ejecutado dicho comando solo tendremos que esperar a que termine y que nos aparezcan los programas que esta suite ofimática contiene.</p></div>
+ </div>
+
+<input type="button" onclick="history.back()" name="Volver Atrás" value="Volver Atrás">
+
+
+</body>
+</html>
